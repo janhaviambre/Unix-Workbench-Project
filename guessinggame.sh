@@ -6,7 +6,7 @@ function guessinggame {
 
 	while true
 	do
-		echo "Guess the number of files in the cureent directory: "
+		echo "Guess the number of files in the current directory: "
 		read guess
 
 		if [[ $guess -ne $actual ]]
