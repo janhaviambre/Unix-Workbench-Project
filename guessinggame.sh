@@ -2,11 +2,11 @@
 # File : guessinggame.sh
 
 function guessinggame {
-	actual=$(ls | wc -l)
+	actual=$(ls -a | wc -l)
 
 	while true
 	do
-		echo "Guess the number of files in the cureent diretory: "
+		echo "Guess the number of files in the current directory: "
 		read guess
 
 		if [[ $guess -ne $actual ]]
