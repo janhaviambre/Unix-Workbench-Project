@@ -8,8 +8,12 @@ function guessinggame {
 	do
 		echo "Guess the number of files in the current directory: "
 		read guess
+		
+		if ! [[ $guess =~ ^[0-9]+$ ]]
+		then
+			echo "Invalid input. Please enter a positive number. "
 
-		if [[ $guess -ne $actual ]]
+		elif [[ $guess -ne $actual ]]
 		then
 			if [[ $guess -lt $actual ]]
 			then

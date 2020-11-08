@@ -1,5 +1,4 @@
-#!/usr/bin/env bash
-# File: makefile
+
 
 all: README.md
 
